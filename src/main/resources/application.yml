@@ -1,0 +1,24 @@
+server:
+  port: ${PORT:8083}
+spring:
+  application:
+    name: payment-service
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: ${TOKEN_ISSUER:http://localhost:8081/oauth2/jwks}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://localhost:8088/eureka/"
+logging:
+  level:
+    org:
+      springframework:
+        security: trace
+        web: trace
+    root: info
+  pattern:
+    level: "%5p [payment-service] %d{HH:mm:ss.SSS} [%t] %c.class{%L} - %m%n"
