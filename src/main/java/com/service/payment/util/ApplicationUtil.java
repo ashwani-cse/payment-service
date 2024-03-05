@@ -1,4 +1,4 @@
-package com.service.payment.paymentservice.util;
+package com.service.payment.util;
 
 import java.util.Collection;
 

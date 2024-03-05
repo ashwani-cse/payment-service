@@ -1,7 +1,7 @@
-package com.service.payment.paymentservice.exception;
+package com.service.payment.exception;
 
-import com.service.payment.paymentservice.dto.ErrorPayload;
-import com.service.payment.paymentservice.util.ApplicationUtil;
+import com.service.payment.dto.ErrorPayload;
+import com.service.payment.util.ApplicationUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +23,7 @@ public class ApiValidationExceptionHandler {
 
     @ExceptionHandler(NoResourceFoundException.class)
     public ResponseEntity<ErrorPayload> handleNoResourceFoundException(NoResourceFoundException exception) {
-        log.error("handleNoResourceFoundException: {}", exception.getMessage());
+        log.error("handleNoResourceFoundException: {} for path: {}", exception.getMessage(), exception.getResourcePath());
         return ErrorResponse.handlerException(HttpStatus.BAD_REQUEST.value(), exception.getMessage());
     }
 

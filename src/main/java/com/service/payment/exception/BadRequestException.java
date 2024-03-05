@@ -1,4 +1,4 @@
-package com.service.payment.paymentservice.exception;
+package com.service.payment.exception;
 
 /**
  * @author Ashwani Kumar

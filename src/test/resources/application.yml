@@ -1,0 +1,21 @@
+server:
+  port: ${PORT:8083}
+spring:
+  application:
+    name: payment-service
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: ${TOKEN_ISSUER:http://localhost:8081/oauth2/jwks}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://localhost:8088/eureka/"
+
+razorpay:
+  key: ${RAZORPAY_KEY:rzp_test_1234}
+  secret: ${RAZORPAY_SECRET:rzp_test_secret_1234}
+  webhook:
+    secret: ${RAZORPAY_WEBHOOK_SECRET:whsec_}

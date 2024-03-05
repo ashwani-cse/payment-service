@@ -1,6 +1,6 @@
-package com.service.payment.paymentservice.exception;
+package com.service.payment.exception;
 
-import com.service.payment.paymentservice.dto.ErrorPayload;
+import com.service.payment.dto.ErrorPayload;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

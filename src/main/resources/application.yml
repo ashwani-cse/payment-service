@@ -7,18 +7,15 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: ${TOKEN_ISSUER:http://localhost:8081/oauth2/jwks}
+          jwk-set-uri: ${TOKEN_ISSUER}
 
 eureka:
   client:
     service-url:
-      defaultZone: "http://localhost:8088/eureka/"
-logging:
-  level:
-    org:
-      springframework:
-        security: trace
-        web: trace
-    root: info
-  pattern:
-    level: "%5p [payment-service] %d{HH:mm:ss.SSS} [%t] %c.class{%L} - %m%n"
+      defaultZone: ${SERVICE_REGISTRY_URL}
+
+razorpay:
+  key: ${RAZORPAY_KEY}
+  secret: ${RAZORPAY_SECRET}
+  webhook:
+    secret: ${RAZORPAY_WEBHOOK_SECRET}

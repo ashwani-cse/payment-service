@@ -1,4 +1,4 @@
-package com.service.payment.paymentservice.constants;
+package com.service.payment.constants;
 
 /**
  * @author Ashwani Kumar

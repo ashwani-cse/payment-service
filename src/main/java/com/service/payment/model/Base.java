@@ -1,4 +1,4 @@
-package com.service.payment.paymentservice.model;
+package com.service.payment.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 //import jakarta.persistence.*;
