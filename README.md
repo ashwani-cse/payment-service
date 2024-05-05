@@ -70,7 +70,7 @@ Connect with us on social media and stay updated with the latest news and develo
 
 - [LinkedIn](https://www.linkedin.com/in/ashwanicse/)
 - [Leetcode](https://leetcode.com/ashwani__kumar/)
-- [Topmate](https://topmate.io/ashwanikumar)
+- [Need Help? Schedule A Call](https://topmate.io/ashwanikumar)
 
 ## Subscribe to our Newsletter
 Stay ahead of the curve by subscribing to our LinkedIn newsletter:
